@@ -1,7 +1,5 @@
--- Define a boolean flag to track if the log has been sent
 local logSent = false
 
--- Modify the SendLog function to check the flag before sending the log
 local SendLog = function(Link, D)
     local Link = _G.AutofarmSettings.Webhook 
 
