@@ -1,4 +1,4 @@
-local SendLog = function(Link)
+local SendLog = function(Link, D)
     local Link = _G.AutofarmSettings.Webhook
 
     if (Link ~= "") then
@@ -6,7 +6,7 @@ local SendLog = function(Link)
 
         local Data =
         {
-            ["content"] = "@everyone FINISHED"
+            ["content"] = D
         }
 
         local s, e = pcall(function()
